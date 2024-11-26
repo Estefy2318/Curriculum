@@ -50,12 +50,12 @@ main img {
 }
 .boton {
   display: inline-block;
-  padding: 30px 30px;
-  background-color: blue;
+  padding: 10px 20px;
+  background-color: white;
   color: white;
   border-radius: 5px;
   text-align: center;
 }
 .boton:hover {
-  background-color: darkblue;
+  background-color: white;
 }
