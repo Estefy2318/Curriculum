@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semaforo</title>
+    <link rel="stylesheet" href="pintado.css">
+
+</head>
+<body>
+        <header>
+            <h1> SEMÁFORO</h1>
+        </header>
+
+        <main>
+            <center>
+                <div class="semaforo">
+                    <div class="circulo" id="rojo"></div>
+                    <div class="circulo" id="amarillo"></div>
+                    <div class="circulo" id="verde"></div>
+                </div>
+                <div class="botones">
+                    <br>
+                    <button class="btn-rojo" onclick="cambiarColor('rojo', 'red', 'amarillo', 'verde')">Rojo</button>
+                    <button class="btn-amarillo" onclick="cambiarColor('amarillo', 'yellow', 'rojo', 'verde')">Amarillo</button>
+                    <button class="btn-verde" onclick="cambiarColor('verde', 'green', 'rojo', 'amarillo')">Verde</button>
+                </div>
+                <script>
+                    function cambiarColor(elementoPrincipal, colorPrincipal, elementoSecundario1, elementoSecundario2) {
+                        const principal = document.getElementById(elementoPrincipal);
+                        principal.style.backgroundColor = colorPrincipal;
+
+                        const secundario1 = document.getElementById(elementoSecundario1);
+                        secundario1.style.backgroundColor = 'transparent';
+
+                        const secundario2 = document.getElementById(elementoSecundario2);
+                        secundario2.style.backgroundColor = 'transparent';
+                    }
+                </script>
+            </center>        
+        </main>
+        
+        <footer>
+            <h4> Universidad Técnica de Cotopaxi  </h4>
+            <h5> octubre 2024 - marzo 2025</h5>
+        </footer>
+</body>
+</html>
